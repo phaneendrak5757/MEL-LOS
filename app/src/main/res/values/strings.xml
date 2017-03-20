@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Fincare</string>
+    <string name="account_type">com.fincare.mel</string>
+    <string name="KYC_type">Choose KYC Type</string>
+
+    <string-array name="CRO_Status">
+        <item>Approved</item>
+        <item>Hold</item>
+        <item>Reject</item>
+        <item>Query Raised</item>
+    </string-array>
+
+    <string-array name="KYC_type_arrays">
+        <item>Voter ID</item>
+        <item>Aadhar Card</item>
+        <item>Ration Card</item>
+
+    </string-array>
+    <string-array name="property_type_arrays">
+        <item>Self-Occupied Residential Property</item>
+        <item>Self-occupied Commercial Property</item>
+        <item>Mixed Usage Property</item>
+        <item>Fully Rental Residential Property</item>
+        <item>Fully Rental Commercial Property</item>
+    </string-array>
+</resources>

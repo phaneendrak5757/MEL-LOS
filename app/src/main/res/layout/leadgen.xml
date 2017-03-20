@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mainhead"
+            android:text="Lead Generation"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:background="@android:color/holo_blue_dark"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mainhead"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal">
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/borrower_name"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textView3"
+        android:layout_weight="0.06"
+        android:layout_alignBottom="@+id/borrower_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/borrower_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/borrower_name"
+        android:layout_toStartOf="@+id/borrower_name"
+        android:layout_alignBottom="@+id/mobile"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/mobile"
+        android:layout_below="@+id/borrower_name"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/borrower_name"
+        android:layout_alignEnd="@+id/borrower_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Residential Address"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/rec_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/rec_address"
+        android:layout_toLeftOf="@+id/rec_address"
+        android:layout_toStartOf="@+id/rec_address"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/rec_address"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Address"
+        android:id="@+id/textView6"
+        android:layout_toLeftOf="@+id/prop_address"
+        android:layout_alignBottom="@+id/prop_address"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/prop_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/prop_address"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KYC Type"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/kyc_type"
+        android:layout_toLeftOf="@+id/kyc_type"
+        android:layout_toStartOf="@+id/kyc_type"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kyc_type"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_alignRight="@+id/mobile"
+        android:layout_alignEnd="@+id/mobile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KYC ID"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/kyc_type"
+        android:layout_alignBottom="@+id/kyc_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kyc_id"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qr"
+        android:src="@mipmap/qr"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@+id/kyc_type"
+        android:layout_below="@+id/kyc_type"
+        android:layout_alignBottom="@+id/kyc_id"
+        android:layout_alignRight="@+id/prop_address"
+        android:layout_alignEnd="@+id/prop_address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Type"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_toLeftOf="@+id/property_type"
+        android:layout_alignBottom="@+id/property_type"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/property_type"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Location"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_toLeftOf="@+id/prop_location"
+        android:layout_alignBottom="@+id/prop_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prop_location"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Type"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_toLeftOf="@+id/business_type"
+        android:layout_alignBottom="@+id/business_type"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/business_type"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Discription"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/business_decription"
+        android:layout_alignBottom="@+id/business_decription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/business_decription"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Address"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_toLeftOf="@+id/business_address"
+        android:layout_alignBottom="@+id/business_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/business_address"
+        android:layout_below="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_toLeftOf="@+id/loan_amount"
+        android:layout_alignBottom="@+id/loan_amount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/loan_amount"
+        android:layout_below="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Purpose"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_toLeftOf="@+id/loan_purpose"
+        android:layout_alignBottom="@+id/loan_purpose"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loan_purpose"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView14"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Requirement Date"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_toLeftOf="@+id/edd"
+        android:layout_alignBottom="@+id/edd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/edd"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dt"
+        android:src="@mipmap/calender"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@+id/edd"
+        android:layout_alignBottom="@+id/edd"
+        android:layout_alignTop="@+id/edd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Of Lead"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_toLeftOf="@+id/source_of_lead"
+        android:layout_alignBottom="@+id/source_of_lead"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/source_of_lead"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lead Type"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_toLeftOf="@+id/lead_type"
+        android:layout_alignBottom="@+id/lead_type"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lead_type"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next FollowUp Date"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/follw_date"
+        android:layout_alignBottom="@+id/follw_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/follw_date"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView18"
+        android:layout_toRightOf="@+id/textView18"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dt1"
+        android:src="@mipmap/calender"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@+id/follw_date"
+        android:layout_alignBottom="@+id/follw_date"
+        android:layout_alignTop="@+id/follw_date"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/save"
+        android:text="Save"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView19"
+        android:layout_toLeftOf="@+id/home"
+        android:layout_alignBottom="@+id/home"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:text="Home"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView19"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_alignRight="@+id/kyc_type"
+        android:layout_alignEnd="@+id/kyc_type" />
+    </RelativeLayout>
+</RelativeLayout>
+ </ScrollView>

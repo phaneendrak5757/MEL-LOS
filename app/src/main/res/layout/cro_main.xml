@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars = "vertical"
+    android:fillViewport="true"
+    >
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:stretchColumns="*"
+            android:id="@+id/datatoadd"
+
+
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_columnSpan="5"
+                android:id="@+id/mainhead"
+                android:text="CRO Approval Pending"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:background="@android:color/holo_blue_dark"/>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/holo_orange_light"
+                />
+                <TextView
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unique No"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/holo_orange_light"
+                    />
+                <TextView
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/holo_orange_light"
+                    />
+                <TextView
+                    android:layout_column="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Amount"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/holo_orange_light"
+                    />
+                <TextView
+                    android:layout_column="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/holo_orange_light"
+                    />
+
+        </GridLayout>
+    </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

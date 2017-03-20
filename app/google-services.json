@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "68551261283",
+    "firebase_url": "https://api-project-68551261283.firebaseio.com",
+    "project_id": "api-project-68551261283",
+    "storage_bucket": "api-project-68551261283.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68551261283:android:b3109ffb80ccfbdf",
+        "android_client_info": {
+          "package_name": "net.simplifiedcoding.firebasepushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68551261283-dt96paa08l3p8l2egbrmpfcqq3nvt7b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaHZ12lcE0WFrqqaEVym_GjAtqWYyA_bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68551261283:android:ec4bd3c1f3b0fe90",
+        "android_client_info": {
+          "package_name": "com.learnprograming.testmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68551261283-dt96paa08l3p8l2egbrmpfcqq3nvt7b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaHZ12lcE0WFrqqaEVym_GjAtqWYyA_bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68551261283:android:60f2f9c15942ebfb",
+        "android_client_info": {
+          "package_name": "com.learnprograming.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68551261283-dt96paa08l3p8l2egbrmpfcqq3nvt7b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaHZ12lcE0WFrqqaEVym_GjAtqWYyA_bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68551261283:android:4301a71d56328f24",
+        "android_client_info": {
+          "package_name": "com.fincare.mel_los"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68551261283-dt96paa08l3p8l2egbrmpfcqq3nvt7b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaHZ12lcE0WFrqqaEVym_GjAtqWYyA_bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
